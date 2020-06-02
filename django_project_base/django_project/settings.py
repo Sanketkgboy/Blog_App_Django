@@ -121,6 +121,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+""" Where the files will be uploaded in the file system, inside media upload_to=''
+folder will be created""" 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# How we are going to access that image in the browser 
+MEDIA_URL = '/media/'
 
 """Third party django application crispy forms (pip install django-crispy-forms)
 Used for highligting the errors occured while submitting form data and keeps the
