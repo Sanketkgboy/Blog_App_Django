@@ -13,6 +13,7 @@ class Profile(models.Model):
 	def __str__(self):
 		return f'{self.user.username} Profile'
 
+	# To resize the image following code can be used 
 	def save(self, *args, **kwargs):
 		super().save() # run the save method of parent class
 
