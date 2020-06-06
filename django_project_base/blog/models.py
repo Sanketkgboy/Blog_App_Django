@@ -18,5 +18,3 @@ class Post(models.Model):
 	def get_absolute_url(self):
 		# Here we want url of post-detail and the current created post
 		return reverse('post-detail', kwargs={'pk': self.pk})
-
-
